@@ -1,7 +1,6 @@
 import {mouseListener} from './mouse-events.js';
 
 
-
 // Рендерим блок клавиатуры и текстовый блок в html
 
 const docBody = document.body;
@@ -38,6 +37,7 @@ let keyArr = [['~', '`'], ['!', '1'], ['@', '2'], ['#', '3'], ['$', '4'], ['%', 
 
 let secondKeyArr = ['Ё', ['!', '1'], ['&quot;', '2'], ['№', '3'], [';', '4'], ['%', '5'], [':', '6'], ['?', '7'], ['*', '8'], ['(', '9'], [')', '0'], ['_', '-'], ['+', '='], 'Backspace', 'Tab', 'Й', 'Ц', 'У', 'К', 'Е', 'Н', 'Г', 'Ш', 'Щ', 'З', 'Х', 'Ъ', 'Delete', 'CapsLock', 'Ф', 'Ы', 'В', 'А', 'П', 'Р', 'О', 'Л', 'Д', 'Ж', 'Э', ['/', '\\'], 'Enter', 'Shift', 'Я', 'Ч', 'С', 'М', 'И', 'Т', 'Ь', 'Б', 'Ю', [',', '.'], '&#9650;', 'Shift', 'Ctrl', 'Meta', 'Alt', 'Space', 'Alt', 'Ctrl', '&#9668;', '&#9660;', '&#9658;'];
 
+const keybord = document.getElementById('keybord');
 
 export function keyboardRender() {
 
@@ -169,11 +169,9 @@ document.addEventListener('keypress', e => {
 
 const btns = document.getElementsByClassName('keybord-button');
 const textArea = document.getElementById('textContent');
-let sup1;
-
 
 textArea.addEventListener('keydown', (e) => {
-	console.log(e);
+	
 	let help;
 	let count = textArea.value.length;
 
@@ -288,3 +286,4 @@ textArea.addEventListener('keyup', (e) => {
 // 	}
 // })
 
+console.log('Для корректной работы ввода с реальной клавиатуры необходимо чтобы ваш язык ввода совпадал с текущим языком ввода виртуальной клавиатуры. \n Переключение языка ввода при вводе с клавиатуры - Shift + Ctrl, при вводе мышкой - клик по Shift а затем клик по  Ctrl')

@@ -13,11 +13,11 @@ function languageToggle() {
 	document.addEventListener('keydown', (e) => {
 		if (e.repeat) {
 			return;
-		};
+		}
 		counter.push(e.code);
 	})
 
-	document.addEventListener('keyup', (e) => {
+	document.addEventListener('keyup', () => {
 		if (counter.length === 0) {
 			return;
 		}

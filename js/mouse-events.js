@@ -14,7 +14,7 @@ export function mouseListener() {
 
 	for (let btn of mainBtns) {
 
-		btn.addEventListener('click', (e) => {			
+		btn.addEventListener('click', () => {			
 
 			if(!capsBtn.className.includes('active') && shiftRightBtn.className.includes('active') || !capsBtn.className.includes('active') && shiftLeftBtn.className.includes('active') || capsBtn.className.includes('active') && shiftRightBtn.className.includes('active') || capsBtn.className.includes('active') && shiftLeftBtn.className.includes('active')) {				
 				
@@ -54,7 +54,7 @@ export function mouseListener() {
 
 	for (let btn of supBtns) {
 
-		btn.addEventListener('click', (e) => {			 
+		btn.addEventListener('click', () => {			 
 
 			if(btn.dataset.name === 'CapsLock' || btn.dataset.name.includes('Shift')) {
 				btn.classList.toggle('active');
