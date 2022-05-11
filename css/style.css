@@ -1,0 +1,161 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;	
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#keybord-wrapper {	
+	max-width: 100vw;
+	width: 820px;
+	max-height: 100vh;
+	height: 400px;			
+	background-color: rgba(255, 255, 255, 0.688);
+	margin-top: calc(50vh - 285.5px);	
+}
+#textContent {	
+	max-width: 100%;
+	min-width: 820px;
+	height: 274px;
+	background-color: #fff;
+	border: 1px solid rgb(186, 186, 186);
+	border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	-ms-border-radius: 9px;
+	-o-border-radius: 9px;
+	margin-bottom: 20px;
+	padding: 10px;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 4px;
+	word-wrap: break-word;
+	line-height: 20px;
+	color: #777777;	
+	overflow: hidden;
+	overflow-wrap: break-word;
+	resize: horizontal;
+	-webkit-writing-mode: horizontal-tb;
+	-ms-writing-mode: lr-tb;
+	writing-mode: horizontal-tb;
+}
+#keybord {
+	max-width: 100%;
+	min-width: 820px;	
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: rgb(252 252 252 / 1);
+	border: 1px solid rgb(186, 186, 186);
+	border-radius: 9px;
+	padding: 5px;		
+	gap: 3px;
+
+}
+.keybord-button {	
+	width: 50px;
+	height: 50px;	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	gap: 5px;
+	background-color: rgb(246 246 246 / 1);
+	font-weight: 700;
+	padding: 1%;	
+	border: 1px solid rgb(186, 186, 186);
+	border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	-ms-border-radius: 9px;
+	-o-border-radius: 9px;	
+}
+.keybord-button.active {
+	background-color: #cacaca;
+	transform: scale(0.95);
+	-webkit-transform: scale(0.95);
+	-moz-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	-o-transform: scale(0.95);
+	transition: scale cubic-bezier(1, 0, 0, 1);
+	-webkit-transition: scale cubic-bezier(1, 0, 0, 1);
+	-moz-transition: scale cubic-bezier(1, 0, 0, 1);
+	-ms-transition: scale cubic-bezier(1, 0, 0, 1);
+	-o-transition: scale cubic-bezier(1, 0, 0, 1);
+}
+#top, #bottom {		
+	color: #4e4e4e;
+}
+#top {
+	align-self: flex-start;
+	font-size: 14px;
+}
+#bottom {
+	font-size: 16px;
+}
+div[data-name = 'Tab']{ 
+	min-width: 82px; 
+	width: 
+	-webkit-fit-content; width: 
+	-moz-fit-content; width: 
+	fit-content;
+}
+div[data-name = 'Backspace']{ 
+	min-width: 118px; 
+	width: 
+	-webkit-fit-content; width: 
+	-moz-fit-content; width: 
+	fit-content;
+}
+div[data-name = 'Enter'] {
+	min-width: 70px; 
+	width: 
+	-webkit-fit-content; width: 
+	-moz-fit-content; width: 
+	fit-content;
+}
+div[data-name = 'CapsLock'] {
+	min-width: 95px; 
+	width: 
+	-webkit-fit-content; width: 
+	-moz-fit-content; width: 
+	fit-content;
+}
+div[data-name = 'Delete'] {
+	min-width: 87px; 
+	width: 
+	-webkit-fit-content; width: 
+	-moz-fit-content; width: 
+	fit-content;
+}
+div[data-name = 'ShiftLeft'] {
+	width: 170px; 	
+}
+div[data-name = 'ShiftRight'] {
+	width: 51px; 	
+}
+
+div[data-name = 'ControlLeft'], div[data-name = 'ControlRight'] {
+	width: 100px; 	
+}
+div[data-name = 'AltLeft'], div[data-name = 'AltRight'], div[data-name = 'Meta'] {
+	width: 63px; 	
+}
+div[data-name = 'Space'] {
+	width: 245px;
+}
+div[data-name = 'ArrowLeft'] , div[data-name = 'ArrowRight'] , div[data-name = 'ArrowUp'] , div[data-name = 'ArrowDown'] {
+	background-color: rgb(221 221 221);
+	padding-left: 10px;
+}
+
+div[data-name = 'ControlLeft'], div[data-name = 'ShiftLeft'] {
+	background-color: rgb(255 252 246);
+}
+
